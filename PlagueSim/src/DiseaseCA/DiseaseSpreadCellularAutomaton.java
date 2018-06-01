@@ -337,7 +337,7 @@ public class DiseaseSpreadCellularAutomaton extends CellularAutomaton {
 		 DecimalFormat df = new DecimalFormat("0000");
 		
 					
-		 InfectionParameters regParam = InfectionParameters.getInstance();
+		 InfectionParameter regParam = InfectionParameter.getInstance();
 		 File datei = new File(regParam.getSaveResultToPath() + type + "_" + df.format(timers) + ".".concat(typ));
 		 try {
 			 ImageIO.write(bi, typ, datei);
@@ -358,7 +358,7 @@ public class DiseaseSpreadCellularAutomaton extends CellularAutomaton {
 		if (args.length > 0) {
 			simParam.setSaveResultToPath(args[0]);
 		} else {
-		  simParam.setSaveResultToPath("/Volumes/Macintosh HD/Users/pfeiferb/Documents/2008/Kongresse/biomed/");
+		  simParam.setSaveResultToPath("C:\\Users\\chris\\Desktop\\Uni\\Softwareprojekt Biomedizinische Informatik\\Simulation");
 		}
 		
 		System.out.println ("Simulation of disease spread started. DSCA");
